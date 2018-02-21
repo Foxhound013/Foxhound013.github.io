@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Include the materilize icon set -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="nav-wrapper z-depth-5 deep-purple darken-4">
+        <a href="#" class="brand-logo center hide-on-med-and-down"><img class="profile-img responsive-img circle" src="../img/logan.jpg" alt="W. Logan Downing"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- Define what will be in the side nav bar when on mobile -->
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="feature-section">
+      <div class="container">
+        <div class="row tagline">
+          <h1>A Developer</h1>
+          <h2>with Passion.</h2>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- Enable the collapsible nav -->
+    <script type="text/javascript">
+      $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+      })
+    </script>
+  </body>
+</html>

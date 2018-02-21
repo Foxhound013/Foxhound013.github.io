@@ -1,0 +1,30 @@
+html, body {
+  height: auto;
+  width: auto;
+  color: white;
+}
+
+.profile-img {
+  width: 30%;
+}
+
+#feature-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../img/People&Coffee.jpg);
+  height: 90.9vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tagline h1,
+.tagline h2 {
+  margin-top: 0;
+}
+
+.tagline h2 {
+  text-indent: 24px;
+}
+
+.tagline {
+  padding-top: 40%;
+}
