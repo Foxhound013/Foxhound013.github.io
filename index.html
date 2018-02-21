@@ -15,28 +15,38 @@
 
   <body>
 
+    <!-- Dropdown structure -->
+    <ul id="projectDropdown" class="dropdown-content">
+      <li><a href="../projects/pong.html">Pong.js</a></li>
+    </ul>
+    <ul id="projectDropdownMobile" class="dropdown-content">
+      <li><a href="../projects/pong.html">Pong.js</a></li>
+    </ul>
+
     <nav>
       <div class="nav-wrapper z-depth-5 deep-purple darken-4">
         <a href="#" class="brand-logo center hide-on-med-and-down"><img class="profile-img responsive-img circle" src="../img/logan.jpg" alt="W. Logan Downing"></a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><a href="#">Blog</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a class="dropdown-button" href="#" data-activates="projectDropdown">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#">Resume</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <!-- Define what will be in the side nav bar when on mobile -->
-        <ul class="side-nav" id="mobile-demo">
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+
       </div>
     </nav>
+
+    <!-- Define what will be in the side nav bar when on mobile -->
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="#">Blog</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="projectDropdownMobile">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Resume</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
 
     <section id="feature-section">
       <div class="container">
@@ -57,6 +67,7 @@
     <script type="text/javascript">
       $( document ).ready(function(){
         $(".button-collapse").sideNav();
+        $(".dropdown-button").dropdown();
       })
     </script>
   </body>
